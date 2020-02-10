@@ -38,6 +38,7 @@ namespace WebApplication1
             services.AddTransient<IEnrollmentService, EnrollmentService>();
             services.AddTransient<ICourseRepository, CourseRepository>();
             services.AddTransient<ICourseService, CourseService>();
+            services.AddRazorPages();
             services.AddMvc();
         }
 
