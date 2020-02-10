@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Data.interfaces
 {
-    interface ICourseRepository
+    public interface ICourseRepository
     {
+        List<Course> GetCourses();
     }
 }

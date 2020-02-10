@@ -1,0 +1,21 @@
+﻿@model List<Model.Student>
+@{
+    ViewData["Title"] = "Index";
+}
+
+        <table>
+            <tr>
+                <th>Voornaam</th>
+                <th>Achternaam</th>
+                <th>Datum</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.FirstMidName</td>
+                    <td>@item.LastName</td>
+                    <td>@item.EnrollmentDate</td>
+                </tr>
+            }
+
+        </table>
